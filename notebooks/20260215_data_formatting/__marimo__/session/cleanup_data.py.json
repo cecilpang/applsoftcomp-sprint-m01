@@ -1,0 +1,155 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.6"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "5b7317bc007ec7fddc6e1433d11cb57f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "VlAR",
+      "code_hash": "f3ae878553c47e9a9a55496327790a68",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "The file data/preprocessed/child_motality_melted_20260215.csv exists.\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "The file data/preprocessed/gdp_melted_20260215.csv exists.\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "The file data/preprocessed/motality_gdp_df_20260215.csv exists.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "IuwG",
+      "code_hash": "2777562578e10109dd28557edfab0ed1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\nDataset motality_df: --------------------------------------------------\n              year  motality_rate\ncount  58394.00000   56854.000000\nmean    1950.00000     209.956940\nstd       86.89148     185.139389\nmin     1800.00000       0.150000\n25%     1875.00000      16.080000\n50%     1950.00000     181.475000\n75%     2025.00000     403.462500\nmax     2100.00000     756.290000\n\n\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 58394 entries, 0 to 58393\nData columns (total 4 columns):\n #   Column         Non-Null Count  Dtype  \n---  ------         --------------  -----  \n 0   geo            58394 non-null  object \n 1   name           58394 non-null  object \n 2   year           58394 non-null  int64  \n 3   motality_rate  56854 non-null  float64\ndtypes: float64(1), int64(1), object(2)\nmemory usage: 1.8+ MB\nNone\n\n\ngeo                 0\nname                0\nyear                0\nmotality_rate    1540\ndtype: int64\n\nDataset gdp_df: --------------------------------------------------\n               year      gdpcapita\ncount  58093.000000   58093.000000\nmean    1950.000000   15022.794441\nstd       86.891484   25840.803303\nmin     1800.000000     316.051000\n25%     1875.000000    1272.756470\n50%     1950.000000    3044.834060\n75%     2025.000000   16180.621990\nmax     2100.000000  520313.313900\n\n\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 58093 entries, 0 to 58092\nData columns (total 4 columns):\n #   Column     Non-Null Count  Dtype  \n---  ------     --------------  -----  \n 0   geo        58093 non-null  object \n 1   name       58093 non-null  object \n 2   year       58093 non-null  int64  \n 3   gdpcapita  58093 non-null  float64\ndtypes: float64(1), int64(1), object(2)\nmemory usage: 1.8+ MB\nNone\n\n\ngeo          0\nname         0\nyear         0\ngdpcapita    0\ndtype: int64\n\nDataset combined_df: --------------------------------------------------\n               year  motality_rate      gdpcapita\ncount  58093.000000   56703.000000   58093.000000\nmean    1950.000000     210.458018   15022.794441\nstd       86.891484     185.123182   25840.803303\nmin     1800.000000       0.150000     316.051000\n25%     1875.000000      16.285000    1272.756470\n50%     1950.000000     183.260000    3044.834060\n75%     2025.000000     403.955000   16180.621990\nmax     2100.000000     756.290000  520313.313900\n\n\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 58093 entries, 0 to 58092\nData columns (total 5 columns):\n #   Column         Non-Null Count  Dtype  \n---  ------         --------------  -----  \n 0   geo            58093 non-null  object \n 1   name           58093 non-null  object \n 2   year           58093 non-null  int64  \n 3   motality_rate  56703 non-null  float64\n 4   gdpcapita      58093 non-null  float64\ndtypes: float64(2), int64(1), object(2)\nmemory usage: 2.2+ MB\nNone\n\n\ngeo                 0\nname                0\nyear                0\nmotality_rate    1390\ngdpcapita           0\ndtype: int64\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "PuUv",
+      "code_hash": "0c39114afc6efc459058c8f4c45669d1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Observations:</span>\n<ol>\n<li>\n<span class=\"paragraph\">motality_df:</span>\n<ol start=\"2\">\n<li>58394 observations, each row is the motality rate of a country of a year</li>\n<li>Expected Data types: \"geo\": str, \"name\": str, \"year\": int64, \"motality_rate\": float64</li>\n<li>there are null values of motality_rate, which should be excluded</li>\n</ol>\n</li>\n<li>\n<span class=\"paragraph\">gdp_df:</span>\n<ol start=\"4\">\n<li>58093 observations, each row is the gdp capita of a country of a year</li>\n<li>Note that gdp has less rows than motality. Since we will visualize mortality versus gdp, we should apply inner merge of these two datasets.</li>\n<li>Expected Data types: \"geo\": str, \"name\": str, \"year\": int64, \"gdpcapita\": float64</li>\n<li>No null values in this dataset</li>\n</ol>\n</li>\n<li>\n<span class=\"paragraph\">combined_df</span>\n<ol start=\"9\">\n<li>inner merge of motality_df and gdp_df, resulting 58093 observations, each row is the motality rate, and gdp of a country of a year</li>\n<li>Expected Data types: \"geo\": str, \"name\": str, \"year\": int64, \"motality_rate\": float64, \"gdpcapita\": float64</li>\n<li>there are null values of motality_rate, which should be excluded</li>\n</ol>\n</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Yaea",
+      "code_hash": "e0d18e4d14bfe67ace55d786f74b463a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "<class 'pandas.core.frame.DataFrame'>\nIndex: 56703 entries, 0 to 58092\nData columns (total 5 columns):\n #   Column         Non-Null Count  Dtype  \n---  ------         --------------  -----  \n 0   geo            56703 non-null  object \n 1   name           56703 non-null  object \n 2   year           56703 non-null  int64  \n 3   motality_rate  56703 non-null  float64\n 4   gdpcapita      56703 non-null  float64\ndtypes: float64(2), int64(1), object(2)\nmemory usage: 2.6+ MB\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "pbFo",
+      "code_hash": "4edd7f8395de85241c16f4edfc688de7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "uTyN",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "WjDS",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "QUHF",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
