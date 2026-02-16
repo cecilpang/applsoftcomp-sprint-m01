@@ -34,6 +34,8 @@
 Use seaborn scatterplot to plot motality versus gdp, and make "year" as hue to color years
 
 **Key insights:**
-1. Motality rate decreases with gdp capita increases
-2. In the old years, before 1900, mortality rates were higher and GDP was lower. 
-3. In modern years, after 2000, mortality rates are lower, and GDP is higher.
+1. There is a strong negative correlation between GDP and mortality: Motality rate decreases with gdp capita increases
+2. In the old years (1800–1900), countries had low GDP levels and very high mortality rates.
+3. In recent and future years, countries have low level mortality rates across countries
+4. Mortality decreases steeply when GDP is at low level, indicate that small increases in GDP lead to large health improvements.
+5. The curve flattens when GDP is at high level, indicates diminishing effect of GDP increasing on mortality descreasing.
