@@ -85,22 +85,49 @@ def _(child_motality_melted, gdp_melted):
 
 
 @app.cell
-def _():
+def _(mo):
+    mo.md(r"""
+    # Combine two tidy tables
+    """)
     return
 
 
 @app.cell
-def _():
-    return
+def _(pd):
+    from pathlib import Path
+
+    motality_file = Path('./data/preprocessed/child_motality_melted_20260215.csv')
+    gdp_file = Path('./data/preprocessed/gdp_melted_20260215.csv')
+    two_dfs = {}
+
+    for file_i, name_i in zip([motality_file, gdp_file], ["child_motality_df", "gdp_df"]):
+        if file_i.exists():
+            print(f"The file {file_i} exists.")
+            df_i = pd.read_csv(file_i)
+            two_dfs[name_i] = df_i
+        else:
+            print(f"The file {file_i} does not exist.")
+
+    return (two_dfs,)
 
 
 @app.cell
-def _():
-    return
+def _(two_dfs):
+    child_motality_df = two_dfs["child_motality_df"].copy()
+    gdp_df = two_dfs["gdp_df"].copy()
+    return child_motality_df, gdp_df
 
 
 @app.cell
-def _():
+def _(child_motality_df, gdp_df):
+    motality_gdp_df = child_motality_df.merge(gdp_df, on=['geo', 'name', 'year'])
+    motality_gdp_df
+    return (motality_gdp_df,)
+
+
+@app.cell
+def _(motality_gdp_df):
+    motality_gdp_df.to_csv('./data/preprocessed/motality_gdp_df_20260215.csv', index=False)
     return
 
 

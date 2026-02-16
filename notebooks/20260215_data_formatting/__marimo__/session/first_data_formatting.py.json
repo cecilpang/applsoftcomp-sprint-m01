@@ -137,12 +137,12 @@
     },
     {
       "id": "vtPa",
-      "code_hash": null,
+      "code_hash": "046c63f4f8cd2084e22c456a2f50c1ac",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"combine-two-tidy-tables\">Combine two tidy tables</h1></span>"
           }
         }
       ],
@@ -150,7 +150,33 @@
     },
     {
       "id": "YIOk",
-      "code_hash": null,
+      "code_hash": "a2b4198276e8b2138f5611687af54636",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "The file data/preprocessed/child_motality_melted_20260215.csv exists.\n",
+          "mimetype": "text/plain"
+        },
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "The file data/preprocessed/gdp_melted_20260215.csv exists.\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "WOJl",
+      "code_hash": "99383fe1ad825c07beba7b96e006b484",
       "outputs": [
         {
           "type": "data",
@@ -162,13 +188,13 @@
       "console": []
     },
     {
-      "id": "WOJl",
-      "code_hash": null,
+      "id": "mXNP",
+      "code_hash": "da90e8a82360743928cc8daca295f734",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/html": "<marimo-ui-element object-id='mXNP-0' random-id='c84494b2-88e8-ac4f-9634-15e0755b0dcb'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;geo&#92;&quot;:&#92;&quot;afg&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Afghanistan&#92;&quot;,&#92;&quot;year&#92;&quot;:1800,&#92;&quot;motality_rate&#92;&quot;:468.58,&#92;&quot;gdpcapita&#92;&quot;:560.88817},{&#92;&quot;geo&#92;&quot;:&#92;&quot;ago&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Angola&#92;&quot;,&#92;&quot;year&#92;&quot;:1800,&#92;&quot;motality_rate&#92;&quot;:485.68,&#92;&quot;gdpcapita&#92;&quot;:435.23259},{&#92;&quot;geo&#92;&quot;:&#92;&quot;alb&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Albania&#92;&quot;,&#92;&quot;year&#92;&quot;:1800,&#92;&quot;motality_rate&#92;&quot;:375.2,&#92;&quot;gdpcapita&#92;&quot;:547.53369},{&#92;&quot;geo&#92;&quot;:&#92;&quot;and&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Andorra&#92;&quot;,&#92;&quot;year&#92;&quot;:1800,&#92;&quot;motality_rate&#92;&quot;:null,&#92;&quot;gdpcapita&#92;&quot;:1598.53128},{&#92;&quot;geo&#92;&quot;:&#92;&quot;are&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;UAE&#92;&quot;,&#92;&quot;year&#92;&quot;:1800,&#92;&quot;motality_rate&#92;&quot;:434.46,&#92;&quot;gdpcapita&#92;&quot;:1332.77712},{&#92;&quot;geo&#92;&quot;:&#92;&quot;arg&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Argentina&#92;&quot;,&#92;&quot;year&#92;&quot;:1800,&#92;&quot;motality_rate&#92;&quot;:402.19,&#92;&quot;gdpcapita&#92;&quot;:1981.80486},{&#92;&quot;geo&#92;&quot;:&#92;&quot;arm&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Armenia&#92;&quot;,&#92;&quot;year&#92;&quot;:1800,&#92;&quot;motality_rate&#92;&quot;:371.2,&#92;&quot;gdpcapita&#92;&quot;:686.42028},{&#92;&quot;geo&#92;&quot;:&#92;&quot;atg&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Antigua and Barbuda&#92;&quot;,&#92;&quot;year&#92;&quot;:1800,&#92;&quot;motality_rate&#92;&quot;:473.6,&#92;&quot;gdpcapita&#92;&quot;:1010.93415},{&#92;&quot;geo&#92;&quot;:&#92;&quot;aus&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Australia&#92;&quot;,&#92;&quot;year&#92;&quot;:1800,&#92;&quot;motality_rate&#92;&quot;:390.99,&#92;&quot;gdpcapita&#92;&quot;:957.72201},{&#92;&quot;geo&#92;&quot;:&#92;&quot;aut&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Austria&#92;&quot;,&#92;&quot;year&#92;&quot;:1800,&#92;&quot;motality_rate&#92;&quot;:387.32,&#92;&quot;gdpcapita&#92;&quot;:2266.8642}]&quot;' data-total-rows='58093' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;geo&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;name&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;year&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;motality_rate&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;gdpcapita&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -176,7 +202,7 @@
     },
     {
       "id": "Vszr",
-      "code_hash": null,
+      "code_hash": "7da7fd6ea4319872866898c1efeca08d",
       "outputs": [
         {
           "type": "data",
