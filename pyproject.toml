@@ -1,11 +1,11 @@
 [project]
-name = "project-name"
+name = "ssie519-sprint-m01"
 version = "0.1.0"
-description = "Project description"
+description = "SSIE519 Applied Soft Computing sprint project Module01"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [
-    {name = "Sadamori Kojaku"},
+    {name = "Cecil Pang"},
 ]
 license = {file = "LICENSE"}
 
